@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.avatar {
+    border: 3px solid #d8cefe;
+    border-radius: 100px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: peachpuff;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+    border-left: 6px solid #d8cefe;
+    border-radius: 25px;
+    text-shadow: #d8cefe 1px 0 5px;
+}
+
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 0.15em solid #2b2839;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2b2839 }
+}
